@@ -6,7 +6,7 @@ const numeroSecreto = gerarNumeroAleatorio()
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * maiorValor + 1)
 
-    widow.console.log('número secreto:', numeroSecreto)
+    console.log('número secreto:', numeroSecreto)
 }
 
 const elementoMenorValor = document.getElementById('menor-valor')
