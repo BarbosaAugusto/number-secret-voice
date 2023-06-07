@@ -12,7 +12,6 @@ function onSpeak(e) {
     chute = (e.results[0][0].transcript)
     exibeChuteNaTela(chute)
     verificaSeOChutePossuiValorValido(chute)
-    recognition.addEventListener('end', () => recognition.start())
     return
 }
 
@@ -23,4 +22,6 @@ function exibeChuteNaTela(chute) {
     `
     return
 }
+
+recognition.addEventListener('end', () => recognition.start())
 
